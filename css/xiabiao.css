@@ -1,0 +1,27 @@
+#underline a {
+    text-decoration: none;
+}
+
+#underline {
+    position: relative;
+    float: left;
+
+}
+
+#underline:after {
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: #00e654;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    transition: all .8s;
+}
+
+#underline:hover:after {
+    left: 25%;
+    right: 25%;
+    width: 50%;
+}
